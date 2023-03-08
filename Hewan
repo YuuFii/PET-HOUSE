@@ -1,0 +1,40 @@
+public class Hewan {
+    public String IDMember;
+    public String namaHewan;
+    public String tahunKelahiran;
+    public String jenisHewan;
+
+    public Hewan(){
+
+    }
+
+//    public Hewan(String IDMember, String namaHewan, String tahunKelahiran, String jenisHewan){
+//        this.IDMember = IDMember;
+//        this.namaHewan = namaHewan;
+//        this.tahunKelahiran = tahunKelahiran;
+//        this.jenisHewan = jenisHewan;
+//    }
+
+    public String getIDMember(){
+        return IDMember;
+    }
+
+    public String getNamaHewan(){
+        return namaHewan;
+    }
+
+    public String getTahunKelahiran(){
+        return tahunKelahiran;
+    }
+
+    public String getJenisHewan(){
+        return jenisHewan;
+    }
+
+    public void printDataHewan(){
+        System.out.printf( "%-15s : %s", "ID Member", getIDMember());
+        System.out.printf( "%-15s : %s", "Nama Hewan", getNamaHewan());
+        System.out.printf("%-15s : %s", "Tahun Kelahiran", getTahunKelahiran());
+        System.out.printf("%-15s : %s", "Jenis Hewan", getJenisHewan());
+    }
+}
